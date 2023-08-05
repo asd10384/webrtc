@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <%- include("./api/headers.ejs") %>
+  <title>닉네임선택</title>
+  <link rel="stylesheet" href="/css/main.css"/>
+</head>
+<body>
+  <div class="chat" style="display: none;">
+    <div id="message"></div>
+    <input type="text" id="chat" onkeyup="chatSend(event)" placeholder="메세지"/>
+  </div>
+  <div class="main" style="display: block;">
+    <input type="text" id="name" onkeyup="nameSend(event)" placeholder="nickName"/>
+  </div>
+  
+  <script src="/js/socket/main.js"></script>
+</body>
+</html>
